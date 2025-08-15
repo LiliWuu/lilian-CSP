@@ -37,7 +37,7 @@ Hi! My name is [Your Full Name].
 
 <br>
 
-### Class Progress
+### Clasroom Progress
 
 <a href="{{site.baseurl}}/snake" class="button small" style="background-color: #6b4bd3ff">
     Snake Game
