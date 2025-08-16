@@ -45,7 +45,6 @@ Hi! My name is [Your Full Name].
 <a href="{{site.baseurl}}/turtle" class="button small" style="background-color: #2A7DB1">
     <span style="color: #000000">Turtle</span>
 </a>
-
 <br>
 
 <!-- Contact Section -->
@@ -54,3 +53,4 @@ Hi! My name is [Your Full Name].
 > Feel free to reach out if you'd like to collaborate or learn more about our work.
 
 <p style="color: #2A7DB1;">Open Coding Society: <a href="https://opencodingsociety.com" style="color: #2A7DB1; text-decoration: underline;">Socials</a></p>
+<p><button class="medium filledTinted primary">LinkedIn</button><br /></p>
