@@ -53,4 +53,10 @@ Hi! My name is [Your Full Name].
 > Feel free to reach out if you'd like to collaborate or learn more about our work.
 
 <p style="color: #2A7DB1;">Open Coding Society: <a href="https://opencodingsociety.com" style="color: #2A7DB1; text-decoration: underline;">Socials</a></p>
-<p><button class="medium filledTinted primary">LinkedIn</button><br /></p>
+<p>
+  <a href="https://www.linkedin.com/in/lilian-wu-601b73235/" 
+     class="medium filledTinted primary" 
+     style="display: inline-block; background-color: #0077B5; color: white; font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; padding: 10px 20px; border-radius: 8px; box-shadow: 4px 4px 8px rgba(0,0,0,0.3);">
+    LinkedIn
+  </a>
+</p>
