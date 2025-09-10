@@ -6,9 +6,10 @@ sprite: images/platformer/sprites/flying-ufo.png
 background: images/platformer/backgrounds/alien_planet1.jpg
 permalink: /background
 ---
-
+<!-- HTML for where game is stored -->
 <canvas id="world"></canvas>
 
+<!-- Script logic for the game -->
 <script>
   const canvas = document.getElementById("world");
   const ctx = canvas.getContext('2d');
@@ -61,6 +62,7 @@ permalink: /background
     }
 
     class Player extends GameObject {
+      
       constructor(image, gameWorld) {
         const width = image.naturalWidth / 2;
         const height = image.naturalHeight / 2;
@@ -76,8 +78,12 @@ permalink: /background
       }
     }
 
+/* Game world is master class/object for the entire game
+* the game loop is inside
+*/
     class GameWorld {
       static gameSpeed = 5;
+      // images enter the world
       constructor(backgroundImg, spriteImg) {
         this.canvas = document.getElementById("world");
         this.ctx = this.canvas.getContext('2d');
@@ -91,11 +97,14 @@ permalink: /background
         this.canvas.style.left = `0px`;
         this.canvas.style.top = `${(window.innerHeight - this.height) / 2}px`;
 
+        // game objects are created
         this.objects = [
          new Background(backgroundImg, this),
          new Player(spriteImg, this)
         ];
       }
+
+      // this keeps the game alive and running
       gameLoop() {
         this.ctx.clearRect(0, 0, this.width, this.height);
         for (const obj of this.objects) {
@@ -110,5 +119,7 @@ permalink: /background
     }
 
     const world = new GameWorld(backgroundImg, spriteImg);
+
+    // this starts the game world
     world.start();
   }
